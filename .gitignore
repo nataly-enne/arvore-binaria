@@ -1,0 +1,6 @@
+# libs
+/.idea
+/.out
+*.idea
+*.out
+/bin
