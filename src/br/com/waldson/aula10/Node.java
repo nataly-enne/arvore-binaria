@@ -22,10 +22,6 @@ public class Node {
         return this.right;
     }
 
-    public void setValue(int value) {
-        this.value = value;
-    }
-
     public int getValue() {
         return value;
     }
@@ -102,19 +98,6 @@ public class Node {
             return removeMinorValue(node.left);
         }
         return node.getValue();
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if(this == o){
-            return true;
-        }
-        if(o == null || o.getClass() != this.getClass()){
-            return false;
-        }
-
-        Node node = (Node) o;
-        return Objects.equals(o, this);
     }
 }
 
