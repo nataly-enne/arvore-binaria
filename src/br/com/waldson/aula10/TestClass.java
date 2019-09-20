@@ -69,21 +69,19 @@ public class TestClass {
 
         tree.remove(6);
 
-        assertNull(tree.search(5));
+        assertNull(tree.search(6));
 
     }
 
     @Test
     public void removeIfNodeHasTwoChildren() { // remove se houver dois filhos
+        tree.insert(7);
+        tree.insert(4);
         tree.insert(5);
-        tree.insert(2);
-        tree.insert(1);
+        tree.insert(9);
 
-        tree.remove(5);
-        
-        assertEquals(
-            2,
-            tree.search(5).getLeft().getValue()
-        );
+        tree.remove(4);
+
+        assertEquals(5,tree.search(7).getLeft().getValue());
     }
 }
