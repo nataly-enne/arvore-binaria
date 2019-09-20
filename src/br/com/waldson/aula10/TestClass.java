@@ -74,7 +74,7 @@ public class TestClass {
     }
 
     @Test
-    public void removeIfNodeHasTwoChildren() { // remove se houver dois filhos
+    public void removeIfNodeHasTwoChildren() {
         tree.insert(7);
         tree.insert(4);
         tree.insert(5);
